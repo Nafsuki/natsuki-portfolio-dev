@@ -17,7 +17,7 @@ export default function contact() {
         </p>
         <p>
           <label htmlFor="message">Message</label><br/>
-          <textarea className='w-[500px] rounded' id='message' name='message'></textarea>
+          <textarea required className='w-[500px] rounded' id='message' name='message'></textarea>
         </p>
         <button className="w-[150px] h-[50px] border self-center rounded-lg bg-blue-300" type='submit'>Send</button>
       </form>

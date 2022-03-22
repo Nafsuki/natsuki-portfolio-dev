@@ -18,7 +18,7 @@ export default function Profile() {
       <div className="flex">
         <div className="flex flex-col w-[500px] m-5 pl-3">
           <div
-          className="mb-1 border">
+          className="mb-1 border rounded-md">
             <h2 className="w-full text-xl font-bold">Job Experience</h2>
           </div>
           <motion.div
@@ -78,8 +78,7 @@ export default function Profile() {
 
         <div>
           <div className="w-[500px] pl-3 m-5">
-            <h2 className="text-xl font-bold border">Skills</h2>
-
+            <h2 className="text-xl font-bold border rounded-md">Skills</h2>
             <motion.div
               initial="hidden"
               animate="visible"
@@ -105,7 +104,7 @@ export default function Profile() {
             </motion.div>
           </div>
           <div className="mt-8 flex flex-col w-[500px] pl-3 m-5">
-            <h3 className="text-lg font-bold border">Education</h3>
+            <h3 className="text-xl font-bold border rounded-md">Education</h3>
 
             <motion.div
               initial="hidden"

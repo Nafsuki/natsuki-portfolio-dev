@@ -91,16 +91,16 @@ export default function Profile() {
                   <div className="mr-1"><SiJavascript /></div>
                   <span>JavaScript</span>
                 </div> */}
-                <p>JavaScript/TypeScript, HTML/CSS</p>
+                <p className="text-gray-500">JavaScript/TypeScript, HTML/CSS</p>
               </div>
               <div>
                 <h3 className="font-bold">Frameworks/Systems</h3>
-                <p>ReactJS, NextJS, React Native, TailwindCSS, <br/> Styled Components, Git, GitHub, Node, GraphQL, Sass</p>
+                <p className="text-gray-500">ReactJS, NextJS, React Native, TailwindCSS, <br/> Styled Components, Git, GitHub, Node, GraphQL, Sass</p>
               </div>
 
               <div>
                 <h3 className="font-bold">Tools/Softwares</h3>
-                <p>Figma, Adobe XD, Photoshop, Illustrator, Premier Pro</p>
+                <p className="text-gray-500">Figma, Adobe XD, Photoshop, Illustrator, Premier Pro</p>
               </div>
             </motion.div>
           </div>
@@ -113,12 +113,12 @@ export default function Profile() {
               variants={fadeInUp}
               className="pt-3 pb-3 mt-5 space-y-3 rounded-lg shadow-2xl shadow-indigo-500/50">
               <div>
-                <p className="font-bold">Shirayuri University in Tokyo</p> <span className="text-sm text-gray-500">2006-2011</span>
-                <p>Bachelor of Arts - English Literature</p>
+                <p className="font-bold">Shirayuri University in Tokyo</p> <span className="text-sm text-gray-400">2006-2011</span>
+                <p className="text-gray-500">Bachelor of Arts - English Literature</p>
               </div>
               <div>
-                <p className="font-bold">Internatinal Language Academy of Canada</p> <span className="text-sm text-gray-500">2007-2008</span>
-                <p>Foereign Education</p>
+                <p className="font-bold">Internatinal Language Academy of Canada</p> <span className="text-sm text-gray-400">2007-2008</span>
+                <p className="text-gray-500">Foereign Education</p>
               </div>
             </motion.div>
           </div>

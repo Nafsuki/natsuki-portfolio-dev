@@ -1,7 +1,8 @@
 import Head from "next/head"
-import Navbar from "./Navbar"
 import Footer from "./Footer"
 import Test from "./Test"
+import { motion } from 'framer-motion'
+import { fadeIn } from "../styles/animations"
 
 export default function Layout({title = 'Natsuki Yamaguchi | Frontend Developer', children}) {
   return (
@@ -9,10 +10,12 @@ export default function Layout({title = 'Natsuki Yamaguchi | Frontend Developer'
       <Head>
         <title>{title}</title>
       </Head>
-
-      {/* <Navbar /> */}
       <Test />
-      <main>{children}</main>
+      <motion.main
+        initial="hidden"
+        animate="visible"
+        variants={fadeIn}
+        >{children}</motion.main>
       <Footer />
     </div>
   )

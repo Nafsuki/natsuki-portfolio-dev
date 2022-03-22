@@ -2,6 +2,7 @@ import Layout from "../components/Layout";
 
 
 export default function contact() {
+
   return (
     <Layout>
       <h1 className="text-lg font-bold">Contact Form</h1>
@@ -19,7 +20,8 @@ export default function contact() {
           <label htmlFor="message">Message</label><br/>
           <textarea required className='w-[500px] rounded' id='message' name='message'></textarea>
         </p>
-        <button className="w-[150px] h-[50px] border self-center rounded-lg bg-blue-300" type='submit'>Send</button>
+        <button
+        className="w-[150px] h-[50px] border self-center rounded-lg bg-blue-300 hover:bg-blue-400 transition-colors" type='submit'>Send</button>
       </form>
     </Layout>
   )

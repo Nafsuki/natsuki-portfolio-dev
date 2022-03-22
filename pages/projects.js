@@ -1,11 +1,10 @@
 import Layout from "../components/Layout";
-import Main from "../components/Main";
+import ProjectCards from "../components/ProjectCards";
 
 export default function projects() {
   return (
     <Layout>
-      <div>projects</div>
-      <Main />
+      <ProjectCards />
     </Layout>
   )
 }

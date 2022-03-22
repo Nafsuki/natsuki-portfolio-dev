@@ -1,13 +1,11 @@
 import Layout from "../components/Layout";
-// import Main from "../components/Main";
-// import Profile from "../components/Profile";
-// import Test from "../components/Test";
 
 
 export default function Home() {
   return (
     <Layout>
-      <div className="border bg-pink-200 sm:bg-blue-300 md:bg-pink-200 w-[260px] xs:w-[350px] sm:w-[630px] md:w-[740px] lg:w-[1000px] h-[600px] md:h-[700px] flex flex-col items-center md:items-start">
+      <div
+        className="mt-5 mb-5 border bg-pink-200 xs:bg-yellow-200 sm:bg-blue-300 md:bg-pink-200 w-[260px] xs:w-[350px] sm:w-[630px] md:w-[740px] lg:w-[1000px] h-[600px] md:h-[700px] flex flex-col items-center md:items-start">
         <h1 className="pb-5 text-5xl font-bold sm:text-7xl md:text-left md:text-8xl">
           <span className="text-3xl sm:text-4xl md:text-7xl">Hi, I&#39;m</span><br/>
           <div className="mt-2">
@@ -26,9 +24,6 @@ export default function Home() {
           See my projects
         </button>
       </div>
-      {/* <Profile /> */}
-      {/* <Test /> */}
-      {/* <Main /> */}
     </Layout>
   )
 }

@@ -10,16 +10,19 @@ import { staggerContainer, staggerItem } from '../styles/animations'
 export default function ProjectCards() {
   return (
     <div className='relative'>
-      <div className='cursor-pointer shadow-2xl shadow-indigo-500/50 absolute top-[100px] -left-[90px] bg-blue-400 hover:bg-blue-500 transition-colors w-[90px] h-[50px] rounded-l-xl flex justify-center items-center'>
+      {/* <div className='cursor-pointer shadow-2xl shadow-indigo-500/50 absolute top-[100px] -left-[90px] bg-blue-400 hover:bg-blue-500 transition-colors w-[90px] h-[50px] rounded-l-xl flex justify-center items-center'>
         <span className='text-lg font-bold text-white'>ALL</span>
+      </div> */}
+      <div className='cursor-pointer shadow-2xl text-indigo-900 hover:text-white shadow-indigo-500/50 absolute top-[100px] -left-[90px] border border-r-0 hover:bg-blue-500  transition-colors w-[90px] h-[50px] rounded-l-xl flex justify-center items-center'>
+        <span className='text-lg font-bold '>ALL</span>
       </div>
-      <div className='cursor-pointer shadow-2xl shadow-indigo-500/50 absolute top-[160px] -left-[90px] bg-orange-300 hover:bg-orange-400 transition-colors w-[90px] h-[50px] rounded-l-xl flex justify-center items-center'>
+      <div className='cursor-pointer shadow-2xl shadow-indigo-500/50 absolute top-[160px] -left-[90px] border border-r-0 hover:bg-orange-400 transition-colors w-[90px] h-[50px] rounded-l-xl flex justify-center items-center'>
         <span className='text-lg font-bold text-white'>NextJS</span>
       </div>
-      <div className='cursor-pointer shadow-2xl shadow-indigo-500/50 absolute top-[220px] -left-[90px] bg-orange-300 hover:bg-orange-400 transition-colors w-[90px] h-[50px] rounded-l-xl flex justify-center items-center'>
+      <div className='cursor-pointer shadow-2xl shadow-indigo-500/50 absolute top-[220px] -left-[90px] border border-r-0 hover:bg-orange-400 transition-colors w-[90px] h-[50px] rounded-l-xl flex justify-center items-center'>
         <span className='text-lg font-bold text-white'>ReactJS</span>
       </div>
-      <div className='cursor-pointer shadow-2xl shadow-indigo-500/50 absolute top-[280px] -left-[90px] bg-orange-300 hover:bg-orange-400 transition-colors w-[90px] h-[50px] rounded-l-xl flex justify-center items-center'>
+      <div className='cursor-pointer shadow-2xl shadow-indigo-500/50 absolute top-[280px] -left-[90px] border border-r-0 hover:bg-orange-400 transition-colors w-[90px] h-[50px] rounded-l-xl flex justify-center items-center'>
         <span className='text-lg font-bold text-white'>JS</span>
       </div>
       <motion.div
@@ -27,9 +30,9 @@ export default function ProjectCards() {
         animate="show"
         variants={staggerContainer}
         className="shadow-2xl shadow-indigo-500/50 overflow-y-scroll mt-5 mb-5 w-[260px] xs:w-[350px] sm:w-[630px] md:w-[740px] lg:w-[1000px] h-[600px] md:h-[700px] bg-gray-100 text-white rounded-xl overflow-hidden flex flex-col items-center">
-        <div className='w-full bg-pink-400'><h1 className="m-3 text-3xl font-bold">Recent Projects</h1></div>
-        <div className='grid grid-cols-12'>
-
+        <div className='w-full bg-pink-400'>
+          <h1 className="m-3 text-xl font-bold md:text-3xl">Recent Projects</h1></div>
+        <div className='grid grid-cols-12 mt-5 mb-5'>
           <motion.div
             variants={staggerItem}
             className="col-span-12 sm:col-span-6 md:col-span-4">
@@ -44,7 +47,9 @@ export default function ProjectCards() {
                   />
                 </div>
               </div>
-              <h1 className='m-2 text-sm xs:text-base xs:m-3'>Mapbox Modern Art Gallery Website</h1>
+              <div>
+                <h1 className='w-full pt-2 pb-2 text-sm xs:text-base'>Mapbox Art Gallery Website</h1>
+              </div>
             </div>
           </motion.div>
 
@@ -80,7 +85,7 @@ export default function ProjectCards() {
                   />
                 </div>
               </div>
-              <h1 className='m-2 text-sm xs:text-base xs:m-3'>Vanilla JS Doraemon Memory Game</h1>
+              <h1 className='m-2 text-sm xs:text-base xs:m-3'>JS Doraemon Memory Game</h1>
             </div>
           </motion.div>
 

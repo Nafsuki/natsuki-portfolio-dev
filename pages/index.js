@@ -1,5 +1,5 @@
+import Link from 'next/link'
 import Layout from "../components/Layout";
-
 
 export default function Home() {
   return (
@@ -17,12 +17,14 @@ export default function Home() {
           <h6>Frontend Develper</h6>
           <h6>Located in Hamburg, Germany</h6>
         </div>
-        <button
-        onClick={() => console.log('clicked')}
-        className="text-sm md:text-lg cursor-pointer shadow-lg hover:bg-blue-500 hover:text-white transition font-bold bg-white w-[170px] h-[45px] m-5 md:w-[200px] md:h-[50px] md:mt-5 rounded-full"
-        >
-          See my projects
-        </button>
+        <Link href='/projects' passHref>
+          <button
+            onClick={() => console.log('clicked')}
+            className="border-4 border-dobule text-sm md:text-lg cursor-pointer shadow-lg hover:bg-blue-500 hover:text-white transition font-bold bg-white w-[170px] h-[45px] m-5 md:w-[200px] md:h-[50px] md:mt-5 rounded-full"
+            >
+            See my projects
+          </button>
+        </Link>
       </div>
     </Layout>
   )

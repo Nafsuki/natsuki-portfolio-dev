@@ -8,13 +8,13 @@ import { fadeInUp } from "../styles/animations"
 export default function Profile() {
   return (
     <div
-      className="text-blue-900 overflow-y-scroll overflow-x-hidden shadow-indigo-500/50 shadow-2xl mt-5 mb-5 w-[260px] xs:w-[350px] sm:w-[630px] md:w-[740px] lg:w-[1000px] h-[600px] md:h-[700px] border-2 border-dashed rounded-lg">
+      className="text-gray-900 overflow-y-scroll overflow-x-hidden shadow-indigo-500/50 shadow-2xl mt-5 mb-5 w-[260px] xs:w-[350px] sm:w-[630px] md:w-[740px] lg:w-[1000px] h-[600px] md:h-[700px] border-2 border-dashed rounded-lg">
       <div className="flex flex-col items-center justify-around border-b-2 xs:flex-row xs:h-[100px]">
         <h1
           className="m-3 text-[35px] sm:text-[40px] leading-9 sm:leading-[40px] font-bold">
             Natsuki Yamaguchi
         </h1>
-        <div className="w-[120px] xs:w-auto xs:h-auto sm:w-[80px] sm:h-[80px] h-[120px] flex items-center justify-center m-3 overflow-hidden rounded-full">
+        <div className="ring-gray-200 ring-4 w-[120px] xs:w-auto xs:h-auto sm:w-[80px] sm:h-[80px] h-[120px] flex items-center justify-center m-3 overflow-hidden rounded-full">
           <Image
             src='/images/profile.jpg'
             alt='avatar'
@@ -24,7 +24,7 @@ export default function Profile() {
         </div>
       </div>
       <div className="flex flex-col justify-center lg:flex-row">
-        <div className="flex flex-col lg:w-[500px] mt-5 mb-5 ml-2 sm:m-5 mr-2 lg:m-5 lg:mr-0">
+        <div className="flex flex-col lg:w-[500px] my-5 mx-2 sm:m-5 lg:m-5 lg:mr-0">
           <div className="border rounded-md md:mb-1 lg:mb-0">
             <h2
               className="w-full text-lg font-bold shadow-sm shadow-indigo-500/50 sm:text-xl">
@@ -45,7 +45,7 @@ export default function Profile() {
                   <svg className="w-3 h-3 text-blue-600 dark:text-blue-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clipRule="evenodd"></path></svg>
                 </span>
                 <h3
-                  className="mb-2 ml-2 text-base font-bold text-blue-900 md:mb-1 md:font-semibold sm:text-lg dark:text-white">
+                  className="mb-2 ml-2 text-base font-bold text-gray-900 md:mb-1 md:font-semibold sm:text-lg dark:text-white">
                     Frontend Developer (3yrs +)
                 </h3>
                 <time
@@ -66,7 +66,7 @@ export default function Profile() {
                   <svg className="w-3 h-3 text-blue-600 dark:text-blue-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clipRule="evenodd"></path></svg>
                 </span>
                 <h3
-                  className="mb-2 ml-2 text-base font-bold text-blue-900 md:mb-1 md:font-semibold sm:text-lg dark:text-white">
+                  className="mb-2 ml-2 text-base font-bold text-gray-900 md:mb-1 md:font-semibold sm:text-lg dark:text-white">
                     Professional Singer
                 </h3>
                 <time
@@ -81,7 +81,7 @@ export default function Profile() {
                   <svg className="w-3 h-3 text-blue-600 dark:text-blue-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clipRule="evenodd"></path></svg>
                 </span>
                 <h3
-                  className="mb-2 ml-2 text-base font-bold text-blue-900 md:mb-1 md:font-semibold sm:text-lg dark:text-white">
+                  className="mb-2 ml-2 text-base font-bold text-gray-900 md:mb-1 md:font-semibold sm:text-lg dark:text-white">
                     Microsoft Japan
                 </h3>
                 <time
@@ -100,7 +100,7 @@ export default function Profile() {
                   <svg className="w-3 h-3 text-blue-600 dark:text-blue-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clipRule="evenodd"></path></svg>
                 </span>
                 <h3
-                  className="mb-2 ml-2 text-base font-bold text-blue-900 md:mb-1 md:font-semibold sm:text-lg dark:text-white">
+                  className="mb-2 ml-2 text-base font-bold text-gray-900 md:mb-1 md:font-semibold sm:text-lg dark:text-white">
                     Mathworks Japan
                 </h3>
                 <time

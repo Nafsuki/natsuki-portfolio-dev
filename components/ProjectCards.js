@@ -1,10 +1,9 @@
 import { projectsData } from '../data'
 import Image from 'next/image'
-import { useState } from 'react'
-import { MdClose } from 'react-icons/md';
 
 import { motion } from 'framer-motion'
 import { staggerContainer, staggerItem } from '../styles/animations'
+import { FaLink, FaGithub } from 'react-icons/fa'
 
 export default function ProjectCards() {
   return (
@@ -31,9 +30,9 @@ export default function ProjectCards() {
         initial="hidden"
         animate="show"
         variants={staggerContainer}
-        className="relative shadow-2xl border-2 shadow-indigo-500/50 overflow-y-scroll mt-5 mb-5 w-[260px] xs:w-[350px] sm:w-[630px] md:w-[740px] text-gray-900 lg:w-[1000px] h-[600px] md:h-[700px] rounded-xl overflow-hidden flex flex-col items-center">
-        <div className='w-full bg-blue-200 border-b-2'>
-          <h1 className="m-3 text-xl font-bold md:text-3xl">Recent Projects</h1>
+        className="relative shadow-2xl border-2 border-dashed shadow-indigo-500/50 overflow-y-scroll mt-5 mb-5 w-[260px] xs:w-[350px] sm:w-[630px] md:w-[740px] lg:w-[1000px] h-[600px] md:h-[700px] rounded-xl overflow-hidden flex flex-col items-center">
+        <div className='w-full bg-blue-100 border-b-2 border-dashed'>
+          <h1 className="m-3 text-xl font-bold text-gray-800 md:text-3xl">Recent Projects</h1>
         </div>
 
 
@@ -56,10 +55,11 @@ export default function ProjectCards() {
             <motion.div
               key={index}
               variants={staggerItem}
-              className="col-span-12 m-4 overflow-hidden bg-blue-400 rounded-md shadow-2xl cursor-pointer shadow-indigo-500/50 sm:col-span-6 lg:col-span-4"
+              className="col-span-12 m-4 overflow-hidden bg-blue-100 rounded-md shadow-2xl shadow-indigo-500/50 sm:col-span-6 lg:col-span-4"
             >
               <div className='overflow-hidden'>
-                <div className='flex items-center justify-center overflow-hidden transition-transform cursor-pointer hover:scale-125'>
+              {/* hover:scale-125 */}
+                <div className='flex items-center justify-center overflow-hidden transition-transform'>
                   <Image
                     src={data.image_path}
                     alt={data.name}
@@ -68,7 +68,25 @@ export default function ProjectCards() {
                   />
                 </div>
               </div>
-              <h3 className='my-2 text-sm xs:text-base xs:m-3'>{data.name}</h3>
+              <div className='flex flex-col items-center justify-center py-2 space-y-1 md:flex-row'>
+                <div className='flex items-center justify-center'>
+                  <a
+                    className='text-indigo-900 transition-colors hover:text-indigo-400'
+                    href={data.github_url}
+                    rel='noreferrer'
+                    target='_blank'>
+                    <FaGithub size={20}/>
+                  </a>
+                  <a
+                    className='ml-2 text-indigo-900 transition-colors hover:text-indigo-400'
+                    href={data.deployed_url}
+                    rel='noreferrer'
+                    target='_blank'>
+                    <FaLink size={20}/>
+                  </a>
+                </div>
+                <h3 className='my-2 text-sm text-indigo-900 xs:text-base xs:m-3 md:font-semibold'>{data.name}</h3>
+              </div>
             </motion.div>
           ))}
 

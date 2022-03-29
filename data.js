@@ -5,7 +5,7 @@ export const projectsData = [
     image_path: '/images/projects/mapbox-art-gallery-website.png',
     deployed_url: 'https://nextjs-tailwind-mapbox-art-gallery-website.vercel.app/',
     github_url: 'https://github.com/Nafsuki/nextjs-tailwind-mapbox-art-gallery-website',
-    category: ['react'],
+    category: ['Nextjs'],
     key_techs: ['React', 'TailwindCSS', 'MapBox'],
   },
   {
@@ -14,7 +14,7 @@ export const projectsData = [
     image_path: '/images/projects/meet-landing-page.png',
     deployed_url: 'next-meet-landing-page.vercel.app',
     github_url: 'https://github.com/Nafsuki/next-meet-landing-page',
-    category: ['react'],
+    category: ['Nextjs'],
     key_techs: ['React', 'TailwindCSS'],
   },
   {
@@ -25,5 +25,14 @@ export const projectsData = [
     github_url: 'https://github.com/Nafsuki/doraemon-memory-game-js',
     category: ['JavaScript'],
     key_techs: ['JavaScript', 'CSS'],
+  },
+  {
+    name: 'Random Quote Generator',
+    description: 'test test test test',
+    image_path: '/images/projects/random-quote-generator.png',
+    deployed_url: 'https://nextjs-tailwind-advice-generator-app.vercel.app/',
+    github_url: 'https://github.com/Nafsuki/nextjs-tailwind-advice-generator-app',
+    category: ['Nextjs'],
+    key_techs: ['React', 'TailwindCSS'],
   },
 ]

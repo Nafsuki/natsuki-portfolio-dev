@@ -5,8 +5,8 @@ export default function contact() {
 
   return (
     <Layout>
-      <h1 className="mb-5 text-lg font-bold leading-10 border-4 border-double rounded shadow-lg text-gray-900border-4 shadow-indigo-500/50">Contact Form</h1>
-      <div className="border-double text-blue-900 w-[260px] xs:w-[350px] sm:w-[630px] md:w-[740px] h-auto border-4 rounded-lg shadow-lg shadow-indigo-500/50">
+      <h1 className="mb-5 text-lg font-bold leading-10 text-gray-900 border-4 border-double rounded shadow-lg dark:text-gray-50 shadow-indigo-500/50">Contact Form</h1>
+      <div className="border-double text-blue-900 dark:text-gray-100 w-[260px] xs:w-[350px] sm:w-[630px] md:w-[740px] h-auto border-4 rounded-lg shadow-lg shadow-indigo-500/50">
         <form className="flex flex-col p-5 pt-2 space-y-3 text-lg xs:p-8 xs:pt-5 sm:p-12 sm:pt-8" name='contact' method='POST' data-netlify='true' netlify-honeypot="bot-field">
           <input type='hidden' name="form-name" value='contact' />
           <p>

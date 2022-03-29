@@ -3,12 +3,16 @@ import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { MoonIcon, MenuIcon, XIcon, SunIcon, } from '@heroicons/react/outline'
 import Image from 'next/image'
 import { useRouter } from 'next/router'
+import { useTheme } from 'next-themes'
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
 
-export default function Test() {
+export default function Navbar() {
+  const { theme, setTheme } = useTheme()
+  const [isDarkMode, setIsDarkMode] = useState(false)
+  const {pathname} = useRouter()
 
   const navigation = [
     { name: 'Home', href: '/', current: false},
@@ -17,23 +21,20 @@ export default function Test() {
     { name: 'Contact', href: '/contact', current: false },
   ]
 
-  const [isDarkMode, setIsDarkMode] = useState(false)
-
-  const {pathname} = useRouter()
-
   const modeChange = () => {
     setIsDarkMode(!isDarkMode)
+    setTheme(theme === 'light' ? 'dark' : 'light')
   }
 
   return (
-    <Disclosure as="nav" className="w-screen bg-black">
+    <Disclosure as="nav" className="w-screen bg-blue-100 dark:bg-black">
       {({ open }) => (
         <>
           <div className="px-2 mx-auto max-w-7xl sm:px-6 lg:px-8">
             <div className="relative flex items-center justify-between h-[90px]">
               <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
                 {/* Mobile menu button*/}
-                <Disclosure.Button className="inline-flex items-center justify-center p-2 text-gray-400 rounded-md hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+                <Disclosure.Button className="inline-flex items-center justify-center p-2 text-indigo-900 rounded-md dark:text-gray-400 hover:text-white hover:bg-indigo-600 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
                   <span className="sr-only">Open main menu</span>
                   {open ? (
                     <XIcon className="block w-6 h-6" aria-hidden="true" />
@@ -44,25 +45,36 @@ export default function Test() {
               </div>
               <div className="flex items-center justify-center flex-1 sm:items-stretch sm:justify-start">
                 <div className="flex items-center flex-shrink-0">
+                  <div className='flex items-center justify-center w-24 mx-3 bg-blue-200 rounded-lg dark:bg-black'>
+                    <Image
+                    src='/logo.svg'
+                    alt='Natsuki Logo'
+                    // layout='fill'
+                    // objectFit='contain'
+                    width={60}
+                    height={60}
+                    />
+                  </div>
                   {/* <img
                     className="block w-auto h-8 lg:hidden"
                     src="https://tailwindui.com/img/logos/workflow-mark-indigo-500.svg"
                     alt="Workflow"
-                  /> */}
-                  {/* <img
+                  />
+                  <img
                     className="hidden w-auto h-8 lg:block"
                     src="https://tailwindui.com/img/logos/workflow-logo-indigo-500-mark-white-text.svg"
                     alt="Workflow"
                   /> */}
                 </div>
-                <div className="hidden sm:block sm:ml-6">
+
+                <div className="items-center hidden sm:flex sm:ml-6">
                   <div className="flex space-x-4">
                     {navigation.map((item) => (
                       <a
                         key={item.name}
                         href={item.href}
                         className={classNames(
-                          (pathname === item.href) ? 'bg-pink-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
+                          (pathname === item.href) ? 'bg-pink-700 text-white' : 'text-indigo-900 dark:text-gray-300 dark:hover:bg-indigo-900 dark:hover:text-white hover:bg-indigo-400 hover:text-white transition-colors',
                           'px-3 py-2 rounded-md text-sm font-medium'
                         )}
                         aria-current={item.current ? 'page' : undefined}
@@ -73,11 +85,14 @@ export default function Test() {
                   </div>
                 </div>
               </div>
+
+
+
               <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
                 <button
                   onClick={modeChange}
                   type="button"
-                  className="p-3 text-gray-400 bg-transparent rounded-full hover:text-white focus:outline-none"
+                  className="p-3 text-indigo-900 bg-transparent rounded-full hover:text-indigo-600 dark:text-gray-400 dark:hover:text-white focus:outline-none"
                 >
                   <span className="sr-only">Mode Change</span>
                   {!isDarkMode ? <MoonIcon className="w-6 h-6" aria-hidden="true" /> : <SunIcon className="w-6 h-6" aria-hidden="true" />}
@@ -85,7 +100,7 @@ export default function Test() {
                 </button>
 
                 {/* Profile dropdown */}
-                <Menu as="div" className="relative ml-3">
+                {/* <Menu as="div" className="relative ml-3">
                   <div>
                     <Menu.Button className="flex text-sm bg-gray-800 rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white">
                       <span className="sr-only">Open user menu</span>
@@ -108,9 +123,9 @@ export default function Test() {
                     leave="transition ease-in duration-75"
                     leaveFrom="transform opacity-100 scale-100"
                     leaveTo="transform opacity-0 scale-95"
-                  >
-                    <Menu.Items className="absolute right-0 w-48 py-1 mt-2 origin-top-right bg-white rounded-md shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
-                      <Menu.Item>
+                  > */}
+                    {/* <Menu.Items className="absolute right-0 w-48 py-1 mt-2 origin-top-right bg-white rounded-md shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"> */}
+                      {/* <Menu.Item>
                         {({ active }) => (
                           <a
                             href="#"
@@ -119,7 +134,7 @@ export default function Test() {
                             Your Profile
                           </a>
                         )}
-                      </Menu.Item>
+                      </Menu.Item> */}
                       {/* <Menu.Item>
                         {({ active }) => (
                           <a
@@ -140,9 +155,9 @@ export default function Test() {
                           </a>
                         )}
                       </Menu.Item> */}
-                    </Menu.Items>
-                  </Transition>
-                </Menu>
+                    {/* </Menu.Items> */}
+                  {/* </Transition>
+                </Menu> */}
               </div>
             </div>
           </div>
@@ -155,7 +170,7 @@ export default function Test() {
                   as="a"
                   href={item.href}
                   className={classNames(
-                    item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
+                    item.current ? 'bg-gray-900 text-white' : 'text-indigo-900 dark:text-gray-300 hover:bg-indigo-600 hover:text-white dark:hover:text-white',
                     'block px-3 py-2 rounded-md text-base font-medium'
                   )}
                   aria-current={item.current ? 'page' : undefined}

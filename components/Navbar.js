@@ -75,7 +75,7 @@ export default function Navbar() {
                         href={item.href}
                         className={classNames(
                           (pathname === item.href) ? 'bg-pink-700 text-white' : 'text-indigo-900 dark:text-gray-300 dark:hover:bg-indigo-900 dark:hover:text-white hover:bg-indigo-400 hover:text-white transition-colors',
-                          'px-3 py-2 rounded-md text-sm font-medium'
+                          'cursor-pointer px-3 py-2 rounded-md text-sm font-medium'
                         )}
                         aria-current={item.current ? 'page' : undefined}
                       >

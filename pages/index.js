@@ -21,7 +21,7 @@ export default function Home() {
           </div>
           <Link href='/projects' passHref>
             <button
-              className="cursor-pointer dark:bg-indigo-500 dark:hover:bg-indigo-200 dark:hover:text-indigo-900 dark:border-blue-100 text-sm md:text-lg shadow-lg hover:bg-blue-500 hover:text-white transition-colors font-bold bg-white w-[170px] h-[45px] my-5 mx-auto md:mx-0 md:w-[200px] md:h-[50px] md:mt-5 rounded-full"
+              className="dark:bg-indigo-500 dark:hover:bg-indigo-200 dark:hover:text-indigo-900 dark:border-blue-100 text-sm md:text-lg shadow-lg hover:bg-blue-500 hover:text-white transition-colors font-bold bg-white w-[170px] h-[45px] my-5 mx-auto md:mx-0 md:w-[200px] md:h-[50px] md:mt-5 rounded-full"
               >
               See my projects
             </button>

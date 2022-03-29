@@ -71,14 +71,14 @@ export default function ProjectCards() {
               <div className='flex flex-col items-center justify-center py-2 space-y-1 md:flex-row'>
                 <div className='flex items-center justify-center'>
                   <a
-                    className='text-indigo-900 transition-colors hover:text-indigo-400'
+                    className='text-indigo-900 transition-colors cursor-pointer hover:text-indigo-400'
                     href={data.github_url}
                     rel='noreferrer'
                     target='_blank'>
                     <FaGithub size={20}/>
                   </a>
                   <a
-                    className='ml-2 text-indigo-900 transition-colors hover:text-indigo-400'
+                    className='ml-2 text-indigo-900 transition-colors cursor-pointer hover:text-indigo-400'
                     href={data.deployed_url}
                     rel='noreferrer'
                     target='_blank'>

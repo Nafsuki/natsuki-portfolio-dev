@@ -77,13 +77,15 @@ export default function ProjectCards() {
                     target='_blank'>
                     <FaGithub size={20}/>
                   </a>
+                  {data.deployed_url &&
                   <a
                     className='ml-2 text-indigo-900 transition-colors cursor-pointer hover:text-indigo-400'
                     href={data.deployed_url}
                     rel='noreferrer'
                     target='_blank'>
                     <FaLink size={20}/>
-                  </a>
+                  </a>}
+
                 </div>
                 <h3 className='my-2 text-sm text-indigo-900 xs:text-base xs:m-3 md:font-semibold'>{data.name}</h3>
               </div>

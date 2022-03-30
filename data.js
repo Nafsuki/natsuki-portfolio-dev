@@ -1,5 +1,23 @@
 export const projectsData = [
   {
+    name: 'Natsuki Portfolio',
+    description: 'test test test test',
+    image_path: '/images/projects/natsuki-portfolio.png',
+    deployed_url: 'https://natsukiyamaguchi.com/',
+    github_url: 'https://github.com/Nafsuki/natsuki-portfolio-dev',
+    category: ['Nextjs'],
+    key_techs: ['React', 'TailwindCSS'],
+  },
+  {
+    name: 'React Native Food App',
+    description: 'test test test test',
+    image_path: '/images/projects/react-native-restaurant-search-app.png',
+    // deployed_url: 'https://nextjs-tailwind-mapbox-art-gallery-website.vercel.app/',
+    github_url: 'https://github.com/Nafsuki/react-native-hamburg-restaurant-search-app',
+    category: ['React Native', 'API'],
+    key_techs: ['React Native', 'Yelp API'],
+  },
+  {
     name: 'Mapbox Art Gallery Website',
     description: 'test test test test',
     image_path: '/images/projects/mapbox-art-gallery-website.png',

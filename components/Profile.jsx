@@ -16,7 +16,7 @@ export default function Profile() {
         </h1>
         <div className="ring-gray-200 ring-4 w-[120px] xs:w-auto xs:h-auto sm:w-[80px] sm:h-[80px] h-[120px] flex items-center justify-center m-3 overflow-hidden rounded-full">
           <Image
-            src='/images/profile.jpg'
+            src='/images/profile-icon-zoomed.png'
             alt='avatar'
             width={120}
             height={120}

@@ -27,7 +27,7 @@ export default function Navbar() {
   }
 
   return (
-    <Disclosure as="nav" className="w-screen bg-blue-100 dark:bg-black">
+    <Disclosure as="nav" className="w-screen bg-[#F6AFBE] dark:bg-black">
       {({ open }) => (
         <>
           <div className="px-2 mx-auto max-w-7xl sm:px-6 lg:px-8">
@@ -45,7 +45,7 @@ export default function Navbar() {
               </div>
               <div className="flex items-center justify-center flex-1 sm:items-stretch sm:justify-start">
                 <div className="flex items-center flex-shrink-0">
-                  <div className='flex items-center justify-center w-24 mx-3 bg-blue-200 rounded-lg dark:bg-black'>
+                  <div className='flex items-center justify-center w-24 mx-3 bg-[#F6AFBE] rounded-lg dark:bg-black'>
                     <Image
                     src='/logo.svg'
                     alt='Natsuki Logo'
@@ -74,7 +74,7 @@ export default function Navbar() {
                         key={item.name}
                         href={item.href}
                         className={classNames(
-                          (pathname === item.href) ? 'bg-pink-700 text-white' : 'text-indigo-900 dark:text-gray-300 dark:hover:bg-indigo-900 dark:hover:text-white hover:bg-indigo-400 hover:text-white transition-colors',
+                          (pathname === item.href) ? 'bg-pink-700 text-white' : 'text-indigo-900 dark:text-gray-300 dark:hover:bg-indigo-900 dark:hover:text-white hover:bg-[#F6AFBE] hover:text-white transition-colors',
                           'cursor-pointer px-3 py-2 rounded-md text-sm font-medium'
                         )}
                         aria-current={item.current ? 'page' : undefined}
@@ -92,7 +92,7 @@ export default function Navbar() {
                 <button
                   onClick={modeChange}
                   type="button"
-                  className="p-3 text-indigo-900 bg-transparent rounded-full hover:text-indigo-600 dark:text-gray-400 dark:hover:text-white focus:outline-none"
+                  className="p-3 text-indigo-900 transition-colors bg-transparent rounded-full hover:text-white dark:text-gray-400 dark:hover:text-white focus:outline-none"
                 >
                   <span className="sr-only">Mode Change</span>
                   {!isDarkMode ? <MoonIcon className="w-6 h-6" aria-hidden="true" /> : <SunIcon className="w-6 h-6" aria-hidden="true" />}

@@ -2,7 +2,7 @@ export const projectsData = [
   {
     name: 'Natsuki Portfolio',
     description: 'test test test test',
-    image_path: '/images/projects/natsuki-portfolio.png',
+    image_path: '/images/projects/natsuki-portfolio-new.png',
     deployed_url: 'https://natsukiyamaguchi.com/',
     github_url: 'https://github.com/Nafsuki/natsuki-portfolio-dev',
     category: ['Nextjs'],

@@ -30,7 +30,7 @@ export default function Home() {
         <div className='relative self-center w-full h-auto sm:h-full sm:pt-8 lg:h-auto lg:p-0 md:h-auto'>
           <Image
             className=''
-            src='/Avatar.png'
+            src='/Portfolio-with-circles.png'
             alt='Natsuki Avatar'
             // layout='fill'
             // objectFit='contain'
@@ -38,8 +38,6 @@ export default function Home() {
             height={714}
           />
         </div>
-
-
       </div>
     </Layout>
   )

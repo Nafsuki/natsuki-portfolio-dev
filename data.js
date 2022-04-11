@@ -30,7 +30,7 @@ export const projectsData = [
     name: 'Meet Landing Page',
     description: 'test test test test',
     image_path: '/images/projects/meet-landing-page.png',
-    deployed_url: 'next-meet-landing-page.vercel.app',
+    deployed_url: 'https://next-meet-landing-page.vercel.app/',
     github_url: 'https://github.com/Nafsuki/next-meet-landing-page',
     category: ['Nextjs'],
     key_techs: ['React', 'TailwindCSS'],

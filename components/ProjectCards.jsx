@@ -30,7 +30,7 @@ export default function ProjectCards() {
         initial="hidden"
         animate="show"
         variants={staggerContainer}
-        className="relative shadow-2xl shadow-indigo-500/50 border-[#F6AFBE] dark:border-white border-2 border-dashed overflow-y-scroll mt-5 mb-5 w-[260px] xs:w-[350px] sm:w-[630px] md:w-[740px] lg:w-[1000px] h-[600px] md:h-[700px] rounded-xl overflow-hidden flex flex-col items-center">
+        className="relative shadow-lg shadow-indigo-500/50 border-[#F6AFBE] dark:border-white border-2 border-dashed overflow-y-scroll my-10 w-[260px] xs:w-[350px] sm:w-[630px] md:w-[740px] lg:w-[1000px] h-[600px] md:h-[700px] rounded-xl overflow-hidden flex flex-col items-center">
         <div className='w-full bg-transparent border-b-2 border-dashed dark:bg-black border-[#F6AFBE] dark:border-white'>
           <h1 className="m-3 text-xl font-bold text-gray-800 dark:text-white md:text-3xl">Recent Projects</h1>
         </div>
@@ -55,7 +55,7 @@ export default function ProjectCards() {
             <motion.div
               key={index}
               variants={staggerItem}
-              className="col-span-12 m-4 overflow-hidden bg-transparent rounded-md shadow-2xl dark:bg-black shadow-indigo-500/50 sm:col-span-6 lg:col-span-4"
+              className="col-span-12 m-4 overflow-hidden bg-transparent rounded-md shadow-lg dark:bg-black shadow-indigo-500/50 sm:col-span-6 lg:col-span-4"
             >
               <div className='overflow-hidden'>
               {/* hover:scale-125 */}

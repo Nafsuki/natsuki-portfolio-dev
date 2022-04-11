@@ -1,6 +1,4 @@
 import Image from "next/image"
-import { FaReact } from 'react-icons/fa'
-import {SiJavascript, SiTypescript} from 'react-icons/si'
 import { motion } from 'framer-motion'
 import { fadeInUp } from "../styles/animations"
 
@@ -8,7 +6,7 @@ import { fadeInUp } from "../styles/animations"
 export default function Profile() {
   return (
     <div
-      className="text-gray-900 dark:text-white overflow-y-scroll overflow-x-hidden shadow-indigo-500/50 shadow-2xl mt-5 mb-5 w-[260px] xs:w-[350px] sm:w-[630px] md:w-[740px] lg:w-[1000px] h-[600px] md:h-[700px] border-2 border-dashed rounded-lg">
+      className="text-gray-900 dark:text-white overflow-y-scroll overflow-x-hidden shadow-indigo-500/50 shadow-lg my-10 w-[260px] xs:w-[350px] sm:w-[630px] md:w-[740px] lg:w-[1000px] h-[600px] md:h-[700px] border-2 border-dashed rounded-lg">
       <div className="flex flex-col items-center justify-around border-b-2 xs:flex-row xs:h-[100px]">
         <h1
           className="m-3 text-[35px] sm:text-[40px] leading-9 sm:leading-[40px] font-bold">
@@ -35,7 +33,7 @@ export default function Profile() {
             initial="hidden"
             animate="visible"
             variants={fadeInUp}
-            className="pt-5 pb-3 pl-8 pr-5 mt-3 border rounded-lg shadow-2xl sm:mt-4 md:mt-5 lg:mt-3 lg:h-full shadow-indigo-500/50"
+            className="pt-5 pb-3 pl-8 pr-5 mt-3 border rounded-lg shadow-lg sm:mt-4 md:mt-5 lg:mt-3 lg:h-full shadow-indigo-500/50"
           >
             <ol className="relative border-l border-gray-200 dark:border-gray-700">
 
@@ -127,7 +125,7 @@ export default function Profile() {
               initial="hidden"
               animate="visible"
               variants={fadeInUp}
-              className="pt-3 pb-3 mt-3 space-y-3 border rounded-lg shadow-2xl md:mt-5 shadow-indigo-500/50 lg:mt-3">
+              className="pt-3 pb-3 mt-3 space-y-3 border rounded-lg shadow-lg md:mt-5 shadow-indigo-500/50 lg:mt-3">
               <div>
                 <h3 className="text-base font-bold sm:text-lg">Coding Languages</h3>
                 <p
@@ -169,7 +167,7 @@ export default function Profile() {
               initial="hidden"
               animate="visible"
               variants={fadeInUp}
-              className="pt-3 pb-3 mt-3 space-y-3 border rounded-lg shadow-2xl lg:mt-3 md:mt-5 shadow-indigo-500/50">
+              className="pt-3 pb-3 mt-3 space-y-3 border rounded-lg shadow-lg lg:mt-3 md:mt-5 shadow-indigo-500/50">
               <div>
                 <p
                   className="text-base font-bold sm:text-lg">

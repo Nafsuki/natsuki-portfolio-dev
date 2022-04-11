@@ -1,12 +1,13 @@
 import Link from 'next/link'
-import Layout from "../components/Layout";
 import Image from 'next/image';
+
+import Layout from '../components/Layout';
 
 export default function Home() {
   return (
     <Layout>
       <div
-        className="mt-5 mb-5 bg-transparent xs:bg-transparent sm:bg-transparent md:bg-transparent w-[260px] xs:w-[350px] sm:w-[550px] md:w-[740px] lg:w-[1000px] h-[600px] sm:h-[900px] md:h-[650px] flex flex-col md:flex-row">
+        className="my-10 bg-transparent w-[260px] xs:w-[350px] sm:w-[550px] md:w-[740px] lg:w-[1000px] h-auto sm:h-[900px] md:h-[650px] flex flex-col md:flex-row">
         <div className='flex flex-col justify-center'>
           <h1 className="pb-5 text-5xl font-bold text-gray-900 dark:text-white sm:text-7xl md:text-left md:text-[65px] lg:text-[80px]">
             <span className="text-3xl sm:text-4xl md:text-5xl">Hi, I&#39;m</span><br/>
@@ -29,7 +30,6 @@ export default function Home() {
         </div>
         <div className='relative self-center w-full h-auto mt-5 sm:mt-0 sm:h-full sm:pt-8 lg:h-auto lg:p-0 md:h-auto lg:ml-4'>
           <Image
-            className=''
             src='/Portfolio-with-circles.png'
             alt='Natsuki Avatar'
             // layout='fill'

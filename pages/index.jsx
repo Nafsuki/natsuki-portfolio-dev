@@ -26,7 +26,7 @@ export default function Home() {
 						{/* SNS Icons */}
 						<div className='flex justify-center mt-4 space-x-3 md:justify-start'>
 							<Link href='https://www.linkedin.com/in/nafsuki/' passHref>
-								<FaLinkedin className='text-4xl text-[#1666C2] cursor-pointer hover:opacity-70 transition-opacity' />
+								<FaLinkedin className='text-4xl text-[#1666C2] dark:text-white cursor-pointer hover:opacity-70 transition-opacity' />
 							</Link>
 							<Link href='https://github.com/Nafsuki' passHref>
 								<FaGithub className='text-4xl transition-opacity cursor-pointer hover:opacity-70' />

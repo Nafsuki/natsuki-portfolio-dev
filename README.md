@@ -15,7 +15,7 @@ This is a Natsuki Yamaguchi's Portfolio Website coded with Next.js(React.js) & T
 ⚡️ Modern UI Design + Framer-motion Animations\
 ⚡️ Styled with TailwindCSS\
 ⚡️ Fully Responsive\
-⚡️ Valid Next.js\
+⚡️ Valid Next.js
 
 To view the demo: **[click here](https://the-simplefolio.netlify.app/)**
 

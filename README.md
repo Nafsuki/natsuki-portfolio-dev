@@ -1,6 +1,6 @@
 This is a Natsuki Yamaguchi's Portfolio Website coded with Next.js(React.js) & TailwindCSS.
 
-# Natsuki.Y Portfolio Website
+# Natsuki's Portfolio Website
 *(DarkMode & LightMode toggle created with React Hooks(useState Hook) and @next-themes)
 
 ### Dark Mode

@@ -9,6 +9,17 @@ This is a Natsuki Yamaguchi's Portfolio Website coded with Next.js(React.js) & T
 ### Light Mode
 <img src="https://github.com/Nafsuki/natsuki-portfolio-dev/blob/75db56e834a7d1a860db9d7944a725d1318a5429/public/images/projects/natsuki-portfolio-new-light.png" />
 
+## Features
+
+⚡️ Dark/Light mode with Next-thems\
+⚡️ Modern UI Design + Framer-motion Animations\
+⚡️ Styled with TailwindCSS\
+⚡️ Fully Responsive\
+⚡️ Valid Next.js\
+
+To view the demo: **[click here](https://the-simplefolio.netlify.app/)**
+
+
 ## Technologies
 Project is created with:
 * Next.js: 12.1.0

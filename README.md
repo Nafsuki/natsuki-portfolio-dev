@@ -11,7 +11,7 @@ This is a Natsuki Yamaguchi's Portfolio Website coded with Next.js(React.js) & T
 
 ## Features
 
-⚡️ Dark/Light mode with Next-thems\
+⚡️ Dark/Light mode with React-Hooks & Next-themes\
 ⚡️ Modern UI Design + Framer-motion Animations\
 ⚡️ Styled with TailwindCSS\
 ⚡️ Fully Responsive\

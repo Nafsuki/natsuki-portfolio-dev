@@ -17,7 +17,7 @@ This is a Natsuki Yamaguchi's Portfolio Website coded with Next.js(React.js) & T
 ⚡️ Fully Responsive\
 ⚡️ Valid Next.js
 
-To view the demo: **[click here](https://the-simplefolio.netlify.app/)**
+To view the demo: **[click here](https://natsukiyamaguchi.com/)**
 
 
 ## Technologies

@@ -24,5 +24,4 @@ To view the demo: **[click here](https://natsukiyamaguchi.com/)**
 Project is created with:
 * Next.js: 12.1.0
 * React.js: 17.0.2
-* TailwindCSS: 3.0.7
-* Typescript: 4.5.4
+* TailwindCSS: 3.0.7c

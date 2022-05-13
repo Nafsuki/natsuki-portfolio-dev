@@ -24,4 +24,9 @@ To view the demo: **[click here](https://natsukiyamaguchi.com/)**
 Project is created with:
 * Next.js: 12.1.0
 * React.js: 17.0.2
-* TailwindCSS: 3.0.7c
+* TailwindCSS: 3.0.23
+* Headlessui: 1.5.0
+* Heroicons: 1.0.5
+* framer-motion: 6.2.8
+* next-themes: 0.1.1
+ 

@@ -21,7 +21,7 @@ export default function Home() {
 						</div>
 					</h1>
 					<div className='m-2 text-sm md:text-left md:text-lg'>
-						<h6>Frontend Develper</h6>
+						<h6>Frontend Developer</h6>
 						<h6>Located in Hamburg, Germany</h6>
 						{/* SNS Icons */}
 						<div className='flex justify-center mt-4 space-x-3 md:justify-start'>
